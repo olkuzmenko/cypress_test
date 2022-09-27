@@ -17,6 +17,7 @@ describe('telnyx testcases', () => {
   
   it('Fill talk with expert form', () =>{
     cy.visit('https://telnyx.com/');
+    MainPage.closeCookies();
     MainPage.clickTalkWithExpert();
     ContactUsPage.chooseOption();
     ContactUsPage.enterFirstLastName();
