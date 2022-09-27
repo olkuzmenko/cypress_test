@@ -1,7 +1,29 @@
 {
   
+
   "devDependencies": {
-    "cypress": "^10.8.0",
-    "cypress-xpath": "^2.0.1"
-  }
+  
+
+    
+
+  "@shelex/cypress-allure-plugin": "^2.31.0",
+  
+
+    
+
+  "cypress": "^10.8.0",
+  
+
+    
+
+  "cypress-xpath": "^2.0.1"
+  
+
+  },
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": "./",
+    "types": ["@shelex/cypress-allure-plugin"],
+    "noEmit": true
+}
 }
