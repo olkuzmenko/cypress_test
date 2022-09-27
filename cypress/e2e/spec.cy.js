@@ -14,28 +14,6 @@ describe('telnyx testcases', () => {
   beforeEach(() => {
     cy.viewport(1280, 720)
   })
-
-  it('Create new user', () => {
-    cy.visit('https://telnyx.com/');
-    MainPage.closeCookies();
-    MainPage.clickSignUpButton();
-    SignUpPage.enterEmail();
-    SignUpPage.enterName();
-    SignUpPage.enterPassword();
-    SignUpPage.checkAgreeTerms();
-    SignUpPage.clickSubmit();
-  })
-  
-  it('Authorize user', () =>{
-    cy.visit('https://telnyx.com/');
-    MainPage.clickLoginButton();
-    LoginPage.enterAuthorizeEmail();
-    LoginPage.enterPassword();
-    LoginPage.clickLogin();
-    LoginPage.checkAuthorization();
-    LoginPage.enterPhone();
-    LoginPage.clickSendCode();
-  });
   
   it('Fill talk with expert form', () =>{
     cy.visit('https://telnyx.com/');
@@ -75,8 +53,7 @@ describe('telnyx testcases', () => {
     ResourcesPage.incorrectSearchResult();
     ResourcesPage.backToAllResult();
     ResourcesPage.correctSearch();
-    ResourcesPage.correctSearchResult();
-    ResourcesPage.emailSubscribe(); 
+    ResourcesPage.correctSearchResult(); 
   });
   
   it('create report at Abuse Page', () =>{
@@ -88,8 +65,7 @@ describe('telnyx testcases', () => {
     ReportAbusePage.enterDataOfAbuse();
     ReportAbusePage.clickCheckboxVoice();
     ReportAbusePage.clickCheckboxSMS();
-    ReportAbusePage.clickSubmitBtn();
-    ReportAbusePage.errorMessage() 
+    ReportAbusePage.clickSubmitBtn(); 
   });
 
   it('using invalid data at Pricing Calculator', () =>{
@@ -111,24 +87,5 @@ describe('telnyx testcases', () => {
     PricingCalculatorPage.makeCallControl();
   });
 
-  it('fill become a beta tester form at integrations page', () =>{
-    cy.visit('https://telnyx.com/integrations');
-    IntegrationPage.scroleToForm();
-    IntegrationPage.enterFirstName();
-    IntegrationPage.enterLastName();
-    IntegrationPage.enterIndustry();
-    IntegrationPage.enterEmail();
-    IntegrationPage.enterCompanyWebsite();
-    IntegrationPage.selectUseCase();
-    IntegrationPage.clickSubmitBtn();
-    IntegrationPage.validAssertion()
-    
-  });
-  it('fill empty become a beta tester form at integrations page', () =>{
-    cy.visit('https://telnyx.com/integrations');
-    IntegrationPage.scroleToForm();
-    IntegrationPage.clickSubmitBtn();
-    IntegrationPage.invalidAssertion()  
-  });
   
 })
