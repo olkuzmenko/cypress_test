@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Sep 27 10:23:14 GMT 2022","Tue Sep 27 10:23:32 GMT 2022","17889","","telnyx testcases","","","","Fill talk with expert form",""
+"passed","Tue Sep 27 10:24:04 GMT 2022","Tue Sep 27 10:24:23 GMT 2022","19237","","telnyx testcases","","","","Use search in resources page",""
+"passed","Tue Sep 27 10:23:39 GMT 2022","Tue Sep 27 10:24:04 GMT 2022","24318","","telnyx testcases","","","","join the Waitlist",""
+"passed","Tue Sep 27 10:24:34 GMT 2022","Tue Sep 27 10:24:49 GMT 2022","15397","","telnyx testcases","","","","using invalid data at Pricing Calculator",""
+"passed","Tue Sep 27 10:24:23 GMT 2022","Tue Sep 27 10:24:34 GMT 2022","10898","","telnyx testcases","","","","create report at Abuse Page",""
+"passed","Tue Sep 27 10:23:32 GMT 2022","Tue Sep 27 10:23:39 GMT 2022","7358","","telnyx testcases","","","","Change currency at pricing page",""
